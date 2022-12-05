@@ -23,6 +23,12 @@ public class TenderServiceImpl implements TenderService {
   }
 
   @Override
+  public TenderDto getExactTender(String id) {
+    return tenderMapper.toDto(tenderRepository.findById(id)
+      .orElseThrow(() -> new RuntimeException("Не найден экземлпяр тендера с id = " + id)));
+  }
+
+  @Override
   public List<TenderDto> getFavouriteTenders() {
     return tenderMapper.toDtoList(tenderRepository.findAllByFavouriteIsTrue());
   }

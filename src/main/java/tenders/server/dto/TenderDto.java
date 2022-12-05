@@ -15,5 +15,6 @@ public class TenderDto {
   private String description;
   private String expiration;
   private String price;
+  private String region;
   private boolean favourite;
 }

@@ -38,6 +38,9 @@ public class Tender {
   @Column(name = "price", nullable = false)
   private String price;
 
+  @Column(name = "region", nullable = false)
+  private String region;
+
   @Column(name = "favourite", nullable = false)
   private boolean favourite;
 }

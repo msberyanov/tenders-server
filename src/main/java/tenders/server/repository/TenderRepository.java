@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface TenderRepository extends JpaRepository<Tender, String> {
   List<Tender> findAllByFavouriteIsTrue();
+  List<Tender> findAllByNameLikeIgnoreCase(String name);
 }

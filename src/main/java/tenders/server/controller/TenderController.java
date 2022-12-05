@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import tenders.server.dto.ChangeFavouriteTenderDto;
@@ -20,6 +21,11 @@ public class TenderController {
   @GetMapping("/tenders")
   public ResponseEntity<List<TenderDto>> getTenders(){
     return ResponseEntity.ok(tenderService.getTenders());
+  }
+
+  @GetMapping("/tenders/{id}")
+  public ResponseEntity<TenderDto> getTender(@PathVariable String id){
+    return ResponseEntity.ok(tenderService.getExactTender(id));
   }
 
   @GetMapping("/tenders/favourite")

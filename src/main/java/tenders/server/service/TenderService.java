@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface TenderService {
   List<TenderDto> getTenders();
+  TenderDto getExactTender(String id);
   List<TenderDto> getFavouriteTenders();
   TenderDto changeFavouriteTender(ChangeFavouriteTenderDto changeFavouriteTenderDto);
 }

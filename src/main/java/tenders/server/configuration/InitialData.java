@@ -16,6 +16,7 @@ public class InitialData {
       .description("№64333273")
       .expiration("09.12.2022 15:00")
       .price("12 666 553")
+      .region("Санкт-Петербург")
       .favourite(true)
       .build()
     );
@@ -25,6 +26,7 @@ public class InitialData {
       .description("№64332367")
       .expiration("05.12.2022 09:00")
       .price("400 687")
+      .region("Курская область")
       .favourite(true)
       .build()
     );
@@ -34,6 +36,7 @@ public class InitialData {
       .description("№64326086")
       .expiration("01.12.2022 00:00")
       .price("–")
+      .region("Ямало-Ненецкий автономный округ")
       .favourite(true)
       .build()
     );
@@ -43,6 +46,7 @@ public class InitialData {
       .description("№64323018")
       .expiration("12.12.2022 15:00")
       .price("–")
+      .region("Тюменская область")
       .favourite(true)
       .build()
     );
@@ -52,6 +56,7 @@ public class InitialData {
       .description("№64323008")
       .expiration("08.12.2022 15:00")
       .price("–")
+      .region("Удмуртская республика")
       .favourite(false)
       .build()
     );
@@ -61,6 +66,7 @@ public class InitialData {
       .description("№64322634")
       .expiration("10.01.2023 12:00")
       .price("20 812 575")
+      .region("Республика Татарстан")
       .favourite(false)
       .build()
     );
@@ -70,6 +76,7 @@ public class InitialData {
       .description("№64317168")
       .expiration("12.12.2022 16:00")
       .price("645 463")
+      .region("Санкт-Петербург")
       .favourite(false)
       .build()
     );
@@ -79,6 +86,7 @@ public class InitialData {
       .description("№64315770")
       .expiration("07.12.2022 14:00")
       .price("–")
+      .region("Ханты-Мансийский Автономный округ")
       .favourite(false)
       .build()
     );
@@ -88,6 +96,7 @@ public class InitialData {
       .description("№64315658")
       .expiration("06.12.2022 12:00")
       .price("–")
+      .region("Москва")
       .favourite(false)
       .build()
     );
@@ -97,6 +106,7 @@ public class InitialData {
       .description("№64333969")
       .expiration("01.12.2022 18:34")
       .price("–")
+      .region("Вологодская область")
       .favourite(false)
       .build()
     );
@@ -106,6 +116,7 @@ public class InitialData {
       .description("№64333973")
       .expiration("01.12.2022 19:12")
       .price("–")
+      .region("Мурманская область")
       .favourite(false)
       .build()
     );
@@ -115,6 +126,7 @@ public class InitialData {
       .description("№64311826")
       .expiration("05.12.2022 18:59")
       .price("–")
+      .region("Москва")
       .favourite(false)
       .build()
     );
@@ -124,6 +136,7 @@ public class InitialData {
       .description("№64327403")
       .expiration("02.12.2022 10:00")
       .price("4 811 520")
+      .region("Республика Башкортостан")
       .favourite(false)
       .build()
     );
@@ -133,6 +146,7 @@ public class InitialData {
       .description("№64330614")
       .expiration("12.12.2022 00:00")
       .price("24 259 108")
+      .region("Тюменская область")
       .favourite(false)
       .build()
     );
@@ -142,6 +156,7 @@ public class InitialData {
       .description("№64328194")
       .expiration("07.12.2022 16:00")
       .price("51 222 272")
+      .region("Нефтеюганск")
       .favourite(false)
       .build()
     );

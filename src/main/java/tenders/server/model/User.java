@@ -14,12 +14,12 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Data
-@Table(name = "tenders")
+@Table(name = "users")
 @EqualsAndHashCode
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Tender {
+public class User {
   @Id
   @GeneratedValue(generator = "UUID")
   @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
@@ -29,21 +29,9 @@ public class Tender {
   @Column(name = "name", nullable = false)
   private String name;
 
-  @Column(name = "description", nullable = false)
-  private String description;
-
-  @Column(name = "expiration", nullable = false)
-  private String expiration;
-
-  @Column(name = "price", nullable = false)
-  private String price;
-
-  @Column(name = "region", nullable = false)
-  private String region;
-
   @Column(name = "login", nullable = false)
   private String login;
 
-  @Column(name = "favourite", nullable = false)
-  private boolean favourite;
+  @Column(name = "password", nullable = false)
+  private String password;
 }

@@ -1,10 +1,18 @@
-FROM openjdk
+FROM node:slim
 
-WORKDIR /tenders-server
+WORKDIR /book-library-frontend/
 
-ADD target/tenders-server-1.0-SNAPSHOT.jar .
+COPY public ./public
+COPY src ./src
+COPY package.json .
 
-CMD java -jar ./tenders-server-1.0-SNAPSHOT.jar
+RUN npm install
+RUN npm run build
+RUN npm install -g serve
 
-EXPOSE 8080
+CMD serve -s build
+
+EXPOSE 3000
+
+
 

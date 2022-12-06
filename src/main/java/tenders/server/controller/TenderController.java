@@ -2,6 +2,7 @@ package tenders.server.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +20,7 @@ public class TenderController {
   private final TenderService tenderService;
 
   @GetMapping("/tenders")
-  public ResponseEntity<List<TenderDto>> getTenders(){
+  public ResponseEntity<List<TenderDto>> getTenders() {
     return ResponseEntity.ok(tenderService.getTenders());
   }
 

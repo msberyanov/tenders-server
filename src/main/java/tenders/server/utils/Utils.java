@@ -5,5 +5,5 @@ public class Utils {
 
   public static String wrapStringLikeExpression(String expression) {
     return PERCENT + expression + PERCENT;
-  };
+  }
 }
